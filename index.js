@@ -24,7 +24,6 @@ client.on('message', message => {
     }
     tardsList.push(message.author.username);
     message.channel.send("Fatard @" + message.author.username + " joinned the queue ");
-
 	}else if (message.content.startsWith(prefix + 'gg') || tardsList.length === 5){
     if(tardsList.length === 0){
       message.channel.send("No one in queue");

@@ -4,7 +4,8 @@
   "description": "A bot to pick lane positions for you at dota2 ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "now-start": "node index.js"
   },
   "author": "",
   "license": "ISC",
