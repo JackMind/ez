@@ -10,7 +10,7 @@ client.on('ready',() => { 
 
 var prefix = "$"
 var tardsList = [];
-var roles = ["Carry", "Support", "Jungler", "Roamer", "Nuker", "Initiator", "Pusher"];
+var roles = ["Pos 1", "Pos 2", "Pos 3", "Pos 4", "Pos 5"];
 
 client.on('message', message => {
 	let args = message.content.split(' ').slice(1);
@@ -38,7 +38,7 @@ client.on('message', message => {
 	      roles.splice(tardRoleNum, 1);
 				roles.sort();
     }
-    roles = ["Carry", "Support", "Jungler", "Roamer", "Nuker", "Initiator", "Pusher"];
+    roles = ["Pos 1", "Pos 2", "Pos 3", "Pos 4", "Pos 5"];
     tardsList = [];
   }else if (message.content.startsWith(prefix + 'call')){
     message.channel.send(":feelsamazingman: :mega:  D O T O  C A L L  @everyone")
@@ -50,4 +50,4 @@ client.on('message', message => {
 
 });
 //process.env.TOKEN
-client.login(process.env.TOKEN);
+client.login(token);
